@@ -1,0 +1,19 @@
+[
+  {
+    "title": "About",
+    "path": "#about"
+  },
+  {
+    "title": "Compétences",
+    "path": "#skills"
+  },
+  {
+    "title": "Projects",
+    "path": "#projects"
+  },
+
+  {
+    "title": "Contact",
+    "path": "#contact"
+  }
+]
