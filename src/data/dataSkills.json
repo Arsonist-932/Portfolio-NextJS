@@ -9,32 +9,34 @@
       },
       { "title": "React", "img": "/images/icons_skills/react.webp" },
       { "title": "Redux", "img": "/images/icons_skills/redux.png" },
-      { "title": "Next.js", "img": "/images/icons_skills/next-js.png" }
+      { "title": "Next.js", "img": "/images/icons_skills/next-js.png" },
+      { "title": "Node.js", "img": "/images/icons_skills/nodejs.webp" }
     ]
   },
   {
     "title": "DevOps",
     "id": "DevOps",
     "content": [
+      { "title": "RDW", "img": "/images/icons_skills/responsive.webp" },
       { "title": "Sass", "img": "/images/icons_skills/sass.svg" },
       {
         "title": "Tailwind",
         "img": "/images/icons_skills/tailwind.png"
       },
+
       {
         "title": "Figma",
         "img": "/images/icons_skills/figma.svg"
-      },
-      { "title": "Node.js", "img": "/images/icons_skills/nodejs.webp" }
+      }
     ]
   },
   {
-    "title": "Others",
-    "id": "Others",
+    "title": "Outils",
+    "id": "Outils",
     "content": [
+      { "title": "VScode", "img": "/images/icons_skills/vscode.webp" },
       { "title": "Git", "img": "/images/icons_skills/git.png" },
       { "title": "Github", "img": "/images/icons_skills/github.webp" },
-      { "title": "MongoDB", "img": "/images/icons_skills/mongodb.png" },
       { "title": "Trello", "img": "/images/icons_skills/trello.png" }
     ]
   }
