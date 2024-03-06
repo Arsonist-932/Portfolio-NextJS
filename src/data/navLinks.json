@@ -1,19 +1,19 @@
 [
   {
     "title": "About",
-    "path": "#about"
+    "path": "/#about"
   },
   {
     "title": "Compétences",
-    "path": "#skills"
+    "path": "/#skills"
   },
   {
     "title": "Projects",
-    "path": "#projects"
+    "path": "/#projects"
   },
 
   {
     "title": "Contact",
-    "path": "#contact"
+    "path": "/#contact"
   }
 ]

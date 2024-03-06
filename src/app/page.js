@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
+import AboutSection from "@/components/AboutSection";
 
 export default function Home() {
   return (
@@ -10,10 +11,14 @@ export default function Home() {
         <Navbar />
       </header>
 
-      <main className="">
-        <div className="">
+      <main>
+        <div>
           <section className="bg-bg-hero bg-cover min-h-screen flex flex-col justify-center items-center lg:items-start">
             <HeroSection />
+          </section>
+
+          <section id="about">
+            <AboutSection />
           </section>
         </div>
 
