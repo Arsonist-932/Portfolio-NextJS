@@ -32,7 +32,7 @@
     "image": "/images/projects/sophie-bluel.webp",
     "client": "Agence ArchiWebos - Sophie Bluel",
     "presentation": "Sophie Bluel est une photographe qui souhaite développer son entreprise de photographie en créant un ste portolio afin de montrer son travail.",
-    "objectif": "En utilisant les maquettes fournies par l'UI Designer via l'outil Figma et un tableau Kanban, mon rôle en tant que développeur Front-End est la création d'une interface UI qui permet la présentation des projets du clients. Pour la création de cette interface, différentes options comme le filtrage des projets par catégories, l'intégration d'une page de connexion en utilisant la technologie JWT (JSON Web Token) pour l'authentification, ainsi qu'une page admin permettant la gestion des projets (ajout, suppression). La solution à été développer avec HTML, Javascript et Sass pour un site dynamique afin de générer le contenu et la communication avec une API",
+    "objectif": "En utilisant les maquettes fournies par l'UI Designer via l'outil Figma et un tableau Kanban, mon rôle en tant que développeur Front-End est la création d'une UI qui permet la présentation des projets du clients. Pour la création de cette interface, différentes options comme le filtrage des projets par catégories, l'intégration d'une page de connexion en utilisant la technologie JWT (JSON Web Token) pour l'authentification, ainsi qu'une page admin permettant la gestion des projets (ajout, suppression). La solution à été développer avec HTML, Javascript et Sass pour un site dynamique afin de générer le contenu et la communication avec une API",
     "technologies": [
       "HTML5",
       "Sass",
@@ -107,7 +107,7 @@
     "banner": "/images/banner/banner-77events.png",
     "image": "/images/projects/724events.webp",
     "client": "724events",
-    "présentation": "724events est une agence évènementiel qui souhaite mettre en ligne la nouvelle version de son site vitrine avec le stack React, le développeur en charge du projet a dû partir et n'a pas pu finir le site qui présente encore des bugs à corriger. ",
+    "presentation": "724events est une agence évènementiel qui souhaite mettre en ligne la nouvelle version de son site vitrine avec le stack React, le développeur en charge du projet a dû partir et n'a pas pu finir le site qui présente encore des bugs à corriger. ",
     "objectif": "Pour ce projet, mon rôle était de corriger les bugs existants. J'ai alors pris connaissance du code pour identifier les défauts présents dans celui-ci. L'utlisation de l'extension React DevTools, m'a également permis de comprendre le comportement de certains composants. L'utilisation de test unitaires et fonctionnels avec JEST m'ont permis de résoudre les dysfonctionnement liés au site. J'ai également créé un cahier de recette pour permettre la gestion des différents scénarios attendus.",
     "technologies": [
       "React",
@@ -126,7 +126,7 @@
     "image": "/images/projects/argentBank.webp",
     "banner": "/images/banner/banner_argent.png",
     "client": "ArgentBank - Banque en ligne",
-    "presentation": "ArgentBank est une agence bancaire en ligne avec un système de connexion utilisant une authentification JWT (JSON Web Token) pour ce connecter a un Dashbord afin de visualiser leurs comptes bancaires. ",
+    "presentation": "ArgentBank est une agence bancaire en ligne avec un système de connexion utilisant une authentification JWT (JSON Web Token) pour ce connecter a un dashbord afin de visualiser leurs comptes bancaires. ",
     "objectif": "Mon rôle pour ce projet était de concevoir une interface utilisateur avec React, et Redux pour la gestion des informations. L'intégration d'une page de connexion avec une authentification JWT avec axios afin de communiquer avec une base de données. L'utilisation de Rédux pour le stockage et la gestion des informations utilisateurs. L'utilisattion de Swagger pour définir les spécifications API, en créant les routes nécessaires à la récupération des transactions via l'API. L'utilisation du Green Code avec des composant réutilisables pour réduire l'inmpact environnemental",
     "technologies": [
       "Green Code",

@@ -8,7 +8,7 @@ import ProjectModal from "./ModalProject";
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [isOpen, setIsOpen] = useState(null);
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -70,19 +70,19 @@ const ProjectsSection = () => {
                   description={project.description}
                   imgUrl={project.image}
                   onClick={() => {
-                    setSelectedProject(project);
+                    setIsOpen(project);
                   }}
                 />
               </motion.li>
             ))}
           </ul>
         </div>
-        {selectedProject && (
+        {isOpen && (
           <ProjectModal
             onClose={() => {
-              setSelectedProject(null);
+              setIsOpen(null);
             }}
-            project={selectedProject}
+            project={isOpen}
           />
         )}
       </div>
