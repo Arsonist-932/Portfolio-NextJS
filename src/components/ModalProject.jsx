@@ -24,7 +24,13 @@ const ProjectModal = ({ onClose, project }) => {
           </button>
 
           <div className="w-full">
-            <Image src={project.banner} alt="Banner" width={700} height={500} />
+            <Image
+              src={project.banner}
+              alt="Banner"
+              width={700}
+              height={500}
+              priority
+            />
           </div>
 
           <div className="flex flex-col gap-6 my-4">
