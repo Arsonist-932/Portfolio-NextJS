@@ -41,7 +41,40 @@ const ContactSection = () => {
             {emailSubmitted ? (
               <p className="text-green-500 text-sm mt-2">Email envoyé!</p>
             ) : (
-              <form className="flex flex-col" onSubmit={handleSubmit}>
+              <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+                <div className="mb-4 flex gap-4">
+                  <div>
+                    <label
+                      htmlFor="lastname"
+                      className="text-white block mb-2 text-sm font-medium"
+                    >
+                      Nom *
+                    </label>
+                    <input
+                      name="lastname"
+                      type="text"
+                      id="lastname"
+                      required
+                      className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="firstname"
+                      className="text-white block mb-2 text-sm font-medium"
+                    >
+                      Prénom *
+                    </label>
+                    <input
+                      name="firstname"
+                      type="text"
+                      id="firstname"
+                      required
+                      className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                    />
+                  </div>
+                </div>
                 <div className="mb-6">
                   <label
                     htmlFor="email"
@@ -63,7 +96,7 @@ const ContactSection = () => {
                     htmlFor="subject"
                     className="text-white block text-sm mb-2 font-medium"
                   >
-                    Subject *
+                    Objet *
                   </label>
                   <input
                     name="subject"
