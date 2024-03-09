@@ -5,38 +5,15 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
-  const currently = new Date().getFullYear();
+  const MonthCurrently = new Date().getFullYear();
 
   return (
     <>
-      <div className="border border-t-[#33353F] text-white py-6">
+      <div className="border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white py-4">
         <div className=" flex flex-col items-center">
-          <Image
-            src={Logo}
-            alt="Logo"
-            height={80}
-            width={60}
-            className="lg:w-40"
-            priority
-          />
+          <Image src={Logo} alt="Logo" className="w-16 py-4" priority />
 
-          <div className="flex gap-3 py-4">
-            {socialsLink.map((item, index) => (
-              <li key={index} className="list-none">
-                <Link href={item.Url} target="_blank">
-                  <Image
-                    src={item.image}
-                    alt={item.alt}
-                    width={40}
-                    height={40}
-                    className="lg:w-14"
-                  />
-                </Link>
-              </li>
-            ))}
-          </div>
-
-          <p className="lg:text-xl">{currently} All rights reserved.</p>
+          <p className="">{MonthCurrently} All rights reserved.</p>
         </div>
       </div>
     </>
