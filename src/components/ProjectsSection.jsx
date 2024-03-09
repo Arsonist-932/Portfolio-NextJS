@@ -28,12 +28,12 @@ const ProjectsSection = () => {
 
   return (
     <>
-      <div className="mx-6">
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <div className="mx-6 lg:mx-24">
+        <h2 className="text-center text-4xl font-bold text-white">
           Mes Projets
         </h2>
 
-        <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        <div className="text-white flex flex-row justify-center items-center gap-2 pt-12 pb-8">
           <ProjectTag
             onClick={handleTagChange}
             name="All"

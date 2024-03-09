@@ -27,14 +27,16 @@ const Navbar = () => {
                 onClick={() => setNavbarOpen(true)}
                 className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
               >
-                <Bars3Icon className="h-5 w-5" />
+                <span className="sr-only">Ouvrir le menu</span>
+                <Bars3Icon className="h-5 w-5" aria-label="Ouvrir le menu" />
               </button>
             ) : (
               <button
                 onClick={() => setNavbarOpen(false)}
                 className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
               >
-                <XMarkIcon className="h-5 w-5" />
+                <span className="sr-only">Ferme le menu</span>
+                <XMarkIcon className="h-5 w-5" aria-label="Fermer le menu" />
               </button>
             )}
           </div>

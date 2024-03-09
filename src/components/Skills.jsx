@@ -13,7 +13,7 @@ const Skills = () => {
     setTimeout(() => {
       setTab(id);
       setIsVisible(true);
-    }, 300);
+    }, 500);
   };
 
   const data = dataSkills.find((t) => t.id === tab).content;
@@ -25,7 +25,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="mx-6 my-10">
+      <div className="mx-6 my-20">
         <h2 className="text-center text-3xl sm:text-4xl font-bold text-white my-8">
           Mes Compétences
         </h2>
@@ -51,7 +51,7 @@ const Skills = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.7, delay: index * 0.3 }}
                   className="list-none"
                 >
                   <Image

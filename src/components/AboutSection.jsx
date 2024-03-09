@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="mx-6 my-10 flex gap-4 flex-col items-center md:items-start md:flex-row 2xl:mx-36 2xl:gap-16 ">
         <Image
           className="rounded-[10%] opacity-75 "
-          src="/images/about-image2.jpg"
+          src="/images/about-image2.webp"
           alt="image"
           width={500}
           height={500}

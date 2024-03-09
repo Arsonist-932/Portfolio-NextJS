@@ -22,19 +22,21 @@ const ContactSection = () => {
               message et je vous répondrais dans les plus brefs délais !
             </p>
 
-            <div className="socials flex flex-row justify-center gap-2">
-              {socialsLink.map((item, index) => (
-                <li key={index} className="list-none">
-                  <Link href={item.Url} target="_blank">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      width={50}
-                      height={50}
-                    />
-                  </Link>
-                </li>
-              ))}
+            <div>
+              <ul className="socials flex flex-row justify-center gap-2">
+                {socialsLink.map((item, index) => (
+                  <li key={index} className="list-none">
+                    <Link href={item.Url} target="_blank">
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        width={50}
+                        height={50}
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -95,7 +97,7 @@ const ContactSection = () => {
 
                 <button
                   type="submit"
-                  className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full mt-10"
+                  className="bg-primary-500 hover:bg-primary-600 text-black hover:text-white font-medium py-2.5 px-5 rounded-lg w-full mt-10"
                 >
                   Envoyer
                 </button>
