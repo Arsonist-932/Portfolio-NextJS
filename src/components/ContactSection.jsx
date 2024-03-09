@@ -10,16 +10,18 @@ const ContactSection = () => {
   return (
     <>
       <div className="mx-6 my-4 py-16">
-        <div className="grid md:grid-cols-2 gap-4 relative">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold text-white my-8">
+          Me Contacter
+        </h2>
+
+        <div className="grid gap-4 justify-center relative">
           <div>
-            <h5 className="text-xl font-bold text-white my-2">Me Contacter</h5>
-            <p className="text-[#ADB7BE] mb-4 max-w-md">
-              I&apos;m currently looking for new opportunities, my inbox is
-              always open. Whether you have a question or just want to say hi,
-              I&apos;ll try my best to get back to you!
+            <p className="text-[#ADB7BE] mb-4 max-w-md text-center">
+              Envie de démarrer votre prochain projet avec moi ? Envoyez-moi un
+              message et je vus répondrais dans les plus brefs délais !
             </p>
 
-            <div className="socials flex flex-row gap-2">
+            <div className="socials flex flex-row justify-center gap-2">
               {socialsLink.map((item, index) => (
                 <li key={index} className="list-none">
                   <Link href={item.Url} target="_blank">

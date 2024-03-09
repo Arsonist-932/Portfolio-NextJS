@@ -36,11 +36,11 @@ export default function Home() {
             <ContactSection />
           </section>
         </div>
-
-        <footer>
-          <Footer />
-        </footer>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
