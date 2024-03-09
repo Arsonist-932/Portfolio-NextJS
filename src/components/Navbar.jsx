@@ -2,6 +2,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import Logo from "../../public/images/logo.png";
+import Image from "next/image";
 import navLinks from "@/data/navLinks";
 
 const Navbar = () => {
@@ -15,7 +17,13 @@ const Navbar = () => {
             href={"/"}
             className="text-2xl md:text-5xl text-white font-semibold"
           >
-            LOGO
+            <Image
+              src={Logo}
+              alt="Logo"
+              width={80}
+              height={100}
+              className="w-"
+            />
           </Link>
 
           {/* GESTION NAVLINKS */}
