@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import socialsLink from "@/data/socialsLink";
 import { useState } from "react";
+import Form from "./Form";
 
 const ContactSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState();
@@ -10,15 +11,15 @@ const ContactSection = () => {
   return (
     <>
       <div className="mx-6 my-4 py-16">
-        <h2 className="text-center text-3xl sm:text-4xl font-bold text-white my-8">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold text-white">
           Me Contacter
         </h2>
 
-        <div className="grid gap-4 justify-center relative">
-          <div>
-            <p className="text-[#ADB7BE] mb-4 max-w-md text-center">
+        <div className="flex flex-col items-center gap-4 justify-center">
+          <div className=" my-8">
+            <p className="text-[#ADB7BE] mb-4 max-w-lg text-center text-lg md:text-2xl">
               Envie de démarrer votre prochain projet avec moi ? Envoyez-moi un
-              message et je vus répondrais dans les plus brefs délais !
+              message et je vous répondrais dans les plus brefs délais !
             </p>
 
             <div className="socials flex flex-row justify-center gap-2">
@@ -41,79 +42,49 @@ const ContactSection = () => {
             {emailSubmitted ? (
               <p className="text-green-500 text-sm mt-2">Email envoyé!</p>
             ) : (
-              <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-                <div className="mb-4 flex gap-4">
-                  <div>
-                    <label
-                      htmlFor="lastname"
-                      className="text-white block mb-2 text-sm font-medium"
-                    >
-                      Nom *
-                    </label>
-                    <input
-                      name="lastname"
-                      type="text"
-                      id="lastname"
-                      required
-                      className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="firstname"
-                      className="text-white block mb-2 text-sm font-medium"
-                    >
-                      Prénom *
-                    </label>
-                    <input
-                      name="firstname"
-                      type="text"
-                      id="firstname"
-                      required
-                      className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    />
-                  </div>
-                </div>
-                <div className="mb-6">
-                  <label
-                    htmlFor="email"
-                    className="text-white block mb-2 text-sm font-medium"
-                  >
-                    Email *
-                  </label>
-                  <input
-                    name="email"
-                    type="email"
-                    id="email"
-                    required
-                    className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="email@domaine.com"
-                  />
-                </div>
-                <div className="mb-6">
-                  <label
-                    htmlFor="subject"
-                    className="text-white block text-sm mb-2 font-medium"
-                  >
-                    Objet *
-                  </label>
-                  <input
-                    name="subject"
+              <form className="flex flex-col" onSubmit={handleSubmit}>
+                <div className="flex gap-4">
+                  <Form
+                    htmlFor="lastname"
+                    labelName="Nom *"
                     type="text"
-                    id="Object"
+                    placeholder="Nom..."
                     required
-                    className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="Objet..."
+                  />
+
+                  <Form
+                    htmlFor="firstname"
+                    labelName="Prénom *"
+                    placeholder="Prénom..."
+                    type="text"
+                    required
                   />
                 </div>
-                <div className="mb-6">
+
+                <div className="flex flex-col gap-3">
+                  <Form
+                    htmlFor="email"
+                    labelName="Email *"
+                    type="email"
+                    placeholder="email@domaine.com"
+                    required
+                  />
+
+                  <Form
+                    htmlFor="object"
+                    labelName="Object *"
+                    type="text"
+                    placeholder="Objet..."
+                    required
+                  />
+
                   <label
                     htmlFor="message"
-                    className="text-white block text-sm mb-2 font-medium"
+                    className="text-white block text-sm font-medium"
                   >
                     Message *
                   </label>
+
                   <textarea
                     name="message"
                     id="message"
@@ -121,11 +92,12 @@ const ContactSection = () => {
                     placeholder="Votre message..."
                   />
                 </div>
+
                 <button
                   type="submit"
-                  className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                  className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full mt-10"
                 >
-                  Send Message
+                  Envoyer
                 </button>
               </form>
             )}
