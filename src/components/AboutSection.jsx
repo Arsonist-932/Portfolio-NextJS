@@ -16,28 +16,31 @@ const AboutSection = () => {
         />
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Hello, moi c&apos;est Alexandre
-          </h2>
+          <h2 className="text-4xl font-bold text-white mb-2">Qui suis-je ?</h2>
 
           <p className="md:text-base lg:text-lg 2xl:text-2xl ">
-            Autodidacte, mon parcours en tant que développeur web a commencé de
-            manière à travers des projets personnels et des cours en ligne.
+            Je suis un autodidacte passionné par l&apos;informatique, ayant
+            suivi une formation intensive de 9 mois axée sur des technologies
+            modernes telles que React, Redux, Sass et Node.js.
             <br />
             <br />
-            J&apos;ai suivi fait le choix de suivre une formation de 9 mois chez
-            OpenClassrooms, où j&apos;ai acquis des compétences sur des
-            technologies comme React, Redux, Sass, ou Node.js, afin de créer des
-            applications web performantes, intuitive et conviviale. Je suis
-            toujours enthousiaste à l&apos;idée de me lancer dans de nouveaux
-            projets, d&apos;explorer de nouvelles technologies et de collaborer
-            avec des esprits créatifs.
+            Avec une expertise avancée dans la création d&apos;applications web
+            dynamiques et interactives, une maîtrise de Sass pour des styles CSS
+            modulaires et maintenables, ainsi qu&apos;une capacité à développer
+            des applications côté serveur robustes et évolutives avec Node.js.
             <br />
             <br />
-            N&apos;hésitez pas à consulter mon portfolio pour découvrir mes
-            réalisations. Si vous êtes intéressé par une collaboration ou si
-            vous souhaitez simplement discuter de projets, je serais ravi
-            d&apos;échanger avec vous !
+            J&apos;ai travaillé sur divers projets démontrant mes compétences
+            dans des contextes réels, notamment des applications web
+            interactives et des sites e-commerce.
+            <br />
+            <br />
+            Mon objectif est de continuer à évoluer en tant que développeur web,
+            en explorant de nouvelles technologies et en relevant de nouveaux
+            défis passionnants.
+            <br />
+            N&apos;hésitez pas à me contacter pour discuter de collaborations
+            potentielles ou pour en savoir plus sur mon travail.
           </p>
 
           <div className="flex flex-col md:flex-row gap-2">
