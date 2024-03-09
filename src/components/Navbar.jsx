@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "../../public/images/logo.png";
 import Image from "next/image";
@@ -8,10 +8,31 @@ import navLinks from "@/data/navLinks";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [showBackground, setShowBackground] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowBackground(true);
+    } else {
+      setShowBackground(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+      <nav
+        className={`fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] opacity-0 transition-opacity ${
+          showBackground ? "opacity-0" : "opacity-100"
+        }`}
+        style={{ transitionDuration: "0.3s" }}
+      >
         <div className="flex items-center justify-between px-6 py-2 lg:py-6">
           <Link
             href={"/"}

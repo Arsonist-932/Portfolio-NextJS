@@ -9,8 +9,7 @@
       },
       { "title": "React", "img": "/images/icons_skills/react.webp" },
       { "title": "Redux", "img": "/images/icons_skills/redux.png" },
-      { "title": "Next.js", "img": "/images/icons_skills/next-js.png" },
-      { "title": "Node.js", "img": "/images/icons_skills/nodejs.webp" }
+      { "title": "Next.js", "img": "/images/icons_skills/next-js.png" }
     ]
   },
   {
@@ -35,7 +34,8 @@
     "id": "Outils",
     "content": [
       { "title": "VScode", "img": "/images/icons_skills/vscode.webp" },
-      { "title": "Git", "img": "/images/icons_skills/git.png" },
+
+      { "title": "Node.js", "img": "/images/icons_skills/nodejs.webp" },
       { "title": "Github", "img": "/images/icons_skills/github.webp" },
       { "title": "Trello", "img": "/images/icons_skills/trello.png" }
     ]

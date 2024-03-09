@@ -5,19 +5,19 @@ import TabButton from "./TabButton";
 import Image from "next/image";
 
 const Skills = () => {
-  const [tab, setTab] = useState("Dev");
+  const [currentTab, setcurrentTab] = useState("Dev");
   const [isVisible, setIsVisible] = useState(false);
 
   const handleTabChange = (id) => {
     setIsVisible(false);
     setTimeout(() => {
-      setTab(id);
+      setcurrentTab(id);
       setIsVisible(true);
     }, 500);
   };
 
-  const data = dataSkills.find((t) => t.id === tab).content;
-  const skills = data.map((skill) => skill);
+  const currentData = dataSkills.find((data) => data.id === currentTab);
+  const skills = currentData ? currentData.content : [];
 
   useEffect(() => {
     setIsVisible(true);
@@ -25,7 +25,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="mx-6 my-20">
+      <div className="mx-6 my-16">
         <h2 className="text-center text-3xl sm:text-4xl font-bold text-white my-8">
           Mes Compétences
         </h2>
@@ -34,7 +34,7 @@ const Skills = () => {
             <TabButton
               key={index}
               selectTab={() => handleTabChange(data.id)}
-              active={tab === data.id}
+              active={currentTab === data.id}
             >
               {data.title}
             </TabButton>
@@ -51,7 +51,7 @@ const Skills = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.7, delay: index * 0.3 }}
+                  transition={{ duration: 0.7, delay: index * 0.5 }}
                   className="list-none"
                 >
                   <Image
@@ -59,6 +59,7 @@ const Skills = () => {
                     alt={item.title}
                     width={80}
                     height={80}
+                    priority={true}
                   />
                   <p className=" text-center text-xs p-2">{item.title}</p>
                 </motion.div>
