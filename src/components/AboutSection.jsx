@@ -19,9 +19,9 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-2">Qui suis-je ?</h2>
 
           <p className="md:text-base lg:text-lg 2xl:text-2xl ">
-            Je suis un autodidacte passionné par l&apos;informatique, ayant
-            suivi une formation intensive de 9 mois axée sur des technologies
-            modernes telles que React, Redux, Sass et Node.js.
+            Un autodidacte passionné par l&apos;informatique, ayant suivi une
+            formation intensive de 9 mois axée sur des technologies modernes
+            telles que React, Redux, Sass et Node.js.
             <br />
             <br />
             Avec une expertise avancée dans la création d&apos;applications web

@@ -13,7 +13,7 @@ const ProjectModal = ({ onClose, project }) => {
         }}
       >
         <div
-          className="mx-6 p-4 py-8 min-w-[300px] md:max-w-[700px] h-[600px] sm:h-auto bg-black text-sm rounded-lg overflow-y-auto relative font-kaushan font-black"
+          className="mx-6 p-4 py-8 min-w-[300px] md:max-w-[700px] h-[600px] sm:h-auto bg-black text-sm rounded-lg overflow-y-auto relative"
           onClick={(e) => e.stopPropagation()}
         >
           <button>
@@ -34,7 +34,7 @@ const ProjectModal = ({ onClose, project }) => {
           </div>
 
           <div className="flex flex-col gap-6 my-4">
-            <div className="font-kaushan">
+            <div className="">
               <h3 className="uppercase font-extrabold text-xl text-red-600 text-center mb-2">
                 Présentation
               </h3>

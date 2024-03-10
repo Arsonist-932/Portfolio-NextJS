@@ -57,8 +57,8 @@ const Skills = () => {
                   <Image
                     src={item.img}
                     alt={item.title}
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
                     priority={true}
                   />
                   <p className=" text-center text-xs p-2">{item.title}</p>
