@@ -1,13 +1,26 @@
+import socialsLink from "@/data/socialsLink";
+import { sendData } from "@/data/send";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import socialsLink from "@/data/socialsLink";
-import { useState } from "react";
 import Form from "./Form";
 
 const ContactSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState();
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      lastname: lastname.value,
+      firstname: firstname.value,
+      email: email.value,
+      subject: object.value,
+      message: message.value,
+    };
+
+    sendData(data, setEmailSubmitted);
+  };
+
   return (
     <>
       <div className="mx-6 my-4 py-16">

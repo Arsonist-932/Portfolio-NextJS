@@ -16,6 +16,7 @@
     "react-dom": "^18",
     "react-scroll": "^1.9.0",
     "react-type-animation": "^3.2.0",
+    "resend": "^3.2.0",
     "vercel": "^33.5.4"
   },
   "devDependencies": {
