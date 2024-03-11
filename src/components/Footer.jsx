@@ -11,7 +11,9 @@ const Footer = () => {
         <div className=" flex flex-col items-center">
           <Image src={Logo} alt="Logo" className="w-16 py-4" priority />
 
-          <p className="">{MonthCurrently} All rights reserved.</p>
+          <p className="">
+            ©{MonthCurrently}-{MonthCurrently + 1} All rights reserved.
+          </p>
         </div>
       </div>
     </>
