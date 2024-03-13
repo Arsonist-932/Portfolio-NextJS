@@ -1,5 +1,3 @@
-import { POST } from "@/app/api/send/route";
-
 export const sendData = async (data, setEmailSubmitted) => {
   const JSONdata = JSON.stringify(data);
 
@@ -12,7 +10,9 @@ export const sendData = async (data, setEmailSubmitted) => {
   }).then((res) => {
     if (res.status === 200) {
       console.log("Message sent.");
-      setEmailSubmitted(true);
+      setTimeout(() => {
+        setEmailSubmitted(true);
+      }, 300);
     }
   });
 };
