@@ -1,19 +1,19 @@
 [
   {
     "title": "Github",
-    "image": "/images/icons/github-icon.svg",
+    "image": "/images/icons/icons/github-icon.svg",
     "Url": "https://github.com/Arsonist-932",
     "alt": "Github Icon"
   },
   {
     "title": "LinkedIn",
-    "image": "/images/icons/linkedin-icon.svg",
+    "image": "/images/icons/icons/linkedin-icon.svg",
     "Url": "http://linkedin.com/in/alexandre-fortuné",
     "alt": "Linnkedins Icon"
   },
   {
     "title": "Whatsapp",
-    "image": "/images/icons/whatsapp.svg",
+    "image": "/images/icons/icons/whatsapp.svg",
     "Url": "https://wa.me/message/CAL2MSVT7G3PD1",
     "alt": "Whatsapp Icon"
   }

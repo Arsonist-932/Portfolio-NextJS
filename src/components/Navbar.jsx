@@ -5,13 +5,14 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "../../public/images/logo.png";
 import Image from "next/image";
 import navLinks from "@/data/navLinks";
+import IconSocials from "./IconSocials";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY < 100) {
+    if (window.scrollY < 550) {
       setShowBackground(true);
     } else {
       setShowBackground(false);
@@ -33,12 +34,13 @@ const Navbar = () => {
         }`}
         style={{ transitionDuration: "0.3s" }}
       >
-        <div className="flex items-center justify-between px-6 py-2 lg:py-6">
+        <div className="flex items-center justify-between px-6 py-2 lg:py-3 2xl:px-44">
+          {/* GESTION LOGO */}
           <Link
             href={"/"}
             className="text-2xl md:text-5xl text-white font-semibold"
           >
-            <Image src={Logo} alt="Logo" className="w-10 lg:w-16" />
+            <Image src={Logo} alt="Logo" className="w-10 lg:w-12" />
           </Link>
 
           {/* GESTION NAVLINKS */}
@@ -64,7 +66,7 @@ const Navbar = () => {
 
           {/* GESTION MOBILE NAVLINKS */}
           <div className="menu hidden md:block md:w-auto" id="navbar">
-            <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+            <ul className="flex p-4 md:p-0 md:flex-row md:space-x-6 mt-0">
               {navLinks.map((link, index) => (
                 <li key={index}>
                   <Link
@@ -75,6 +77,8 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+
+              <IconSocials width={25} height={25} />
             </ul>
           </div>
         </div>

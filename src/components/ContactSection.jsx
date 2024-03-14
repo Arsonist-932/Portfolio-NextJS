@@ -34,23 +34,6 @@ const ContactSection = () => {
               Envie de démarrer votre prochain projet avec moi ? Envoyez-moi un
               message et je vous répondrais dans les plus brefs délais !
             </p>
-
-            <div>
-              <ul className="socials flex flex-row justify-center gap-2">
-                {socialsLink.map((item, index) => (
-                  <li key={index} className="list-none">
-                    <Link href={item.Url} target="_blank">
-                      <Image
-                        src={item.image}
-                        alt={item.alt}
-                        width={50}
-                        height={50}
-                      />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           <div>
