@@ -13,7 +13,7 @@ const Skills = () => {
     setTimeout(() => {
       setcurrentTab(id);
       setIsVisible(true);
-    }, 500);
+    }, 100);
   };
 
   const currentData = dataSkills.find((data) => data.id === currentTab);
