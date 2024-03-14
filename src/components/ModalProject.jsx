@@ -13,7 +13,7 @@ const ProjectModal = ({ onClose, project }) => {
         }}
       >
         <div
-          className="mx-6 p-4 py-8 min-w-[300px] md:max-w-[700px] h-[600px] sm:h-auto bg-black text-sm rounded-lg overflow-y-auto relative"
+          className="mx-6 p-4 py-8 min-w-[300px] md:max-w-[700px] h-[600px] sm:h-auto bg-bg-hero  text-sm rounded-lg overflow-y-auto relative"
           onClick={(e) => e.stopPropagation()}
         >
           <button>

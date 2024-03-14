@@ -34,7 +34,7 @@ const Navbar = () => {
         }`}
         style={{ transitionDuration: "0.3s" }}
       >
-        <div className="flex items-center justify-between px-6 py-2 lg:py-3 2xl:px-44">
+        <div className="flex items-center justify-between px-6 py-2 lg:py-3">
           {/* GESTION LOGO */}
           <Link
             href={"/"}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 </li>
               ))}
 
-              <IconSocials width={25} height={25} />
+              <IconSocials width={29} height={25} />
             </ul>
           </div>
         </div>
@@ -94,6 +94,7 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <IconSocials width={29} height={25} />
           </ul>
         ) : null}
       </nav>

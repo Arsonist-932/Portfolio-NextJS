@@ -5,7 +5,7 @@ const ProjectCard = ({ imgUrl, title, onClick }) => {
   return (
     <div>
       <div
-        className="h-80 md:h-96 rounded-t-xl relative group"
+        className="h-80 md:h-96 rounded-t-xl relative group brightness-75"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <div
