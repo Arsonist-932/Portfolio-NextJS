@@ -1,0 +1,109 @@
+.projects-container {
+  margin: 0 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 6rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /* FILTERBAR */
+  .filterbar {
+    margin: 1.75rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+      padding: 3px 2rem;
+      font-size: 16px;
+      line-height: 1.75rem;
+
+      border-width: 2px;
+      border-radius: 1.25rem;
+      cursor: pointer;
+
+      &:hover {
+        border-color: #f97316;
+      }
+    }
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: 0 20rem;
+    }
+  }
+
+  .cards-overlay {
+    position: relative;
+    border-radius: 0.75rem;
+    filter: brightness(0.75);
+    height: 20rem;
+    &:hover {
+      .overlay {
+        visibility: visible;
+      }
+    }
+
+    @media (min-width: 768px) {
+      height: 24rem;
+    }
+
+    .overlay {
+      background-color: #181818;
+      visibility: hidden;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.8;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+
+      h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+      }
+
+      .icon-eye {
+        width: 3.5rem;
+        height: 3.5rem;
+
+        &:hover {
+          svg {
+            color: #ffffff;
+          }
+        }
+
+        svg {
+          color: #adb7be;
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
+    }
+  }
+}

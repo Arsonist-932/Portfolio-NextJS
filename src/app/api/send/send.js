@@ -1,4 +1,4 @@
-export const sendData = async (data, setEmailSubmitted) => {
+export const sendData = async (data) => {
   const JSONdata = JSON.stringify(data);
 
   await fetch("api/send", {
@@ -10,9 +10,6 @@ export const sendData = async (data, setEmailSubmitted) => {
   }).then((res) => {
     if (res.status === 200) {
       console.log("Message sent.");
-      setTimeout(() => {
-        setEmailSubmitted(true);
-      }, 300);
     }
   });
 };

@@ -1,4 +1,3 @@
-import Logo from "../../public/images/logo.png";
 import Image from "next/image";
 import React from "react";
 
@@ -8,11 +7,17 @@ const Footer = () => {
   return (
     <>
       <div className="border border-t-[#33353F] border-l-transparent border-r-transparent border-b-transparent text-white py-4">
-        <div className=" flex flex-col items-center">
-          <Image src={Logo} alt="Logo" className="w-16 py-4" priority />
+        <div className=" flex flex-col items-center gap-3">
+          <Image
+            src={"/images/logo.png"}
+            alt="Logo"
+            width={40}
+            height={40}
+            priority
+          />
 
-          <p className="">
-            ©{MonthCurrently}-{MonthCurrently + 1} All rights reserved.
+          <p className="text-sm">
+            © Copyright {MonthCurrently} | Tous droits réservés
           </p>
         </div>
       </div>

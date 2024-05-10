@@ -1,0 +1,68 @@
+.hero-section {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../../../public/images/bg-hero.webp);
+  background-size: cover;
+
+  @media (min-width: 1024px) {
+    align-items: start;
+  }
+
+  .hero-container {
+    h1 {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      text-align: center;
+
+      @media (min-width: 768px) {
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      @media (min-width: 1024px) {
+        text-align: start;
+        font-size: 4.5rem;
+        line-height: 1;
+      }
+
+      span {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(to left bottom, #fb923c, #dc2626);
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .button-container {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    translate: -50% -50%;
+
+    a > svg {
+      fill: #fff;
+      animation: hover-me 0.5s infinite ease-in alternate;
+    }
+  }
+}
+
+@keyframes hover-me {
+  100% {
+    transform: translate3d(0, 10px, 0);
+  }
+}

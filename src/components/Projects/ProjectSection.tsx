@@ -1,23 +1,25 @@
 "use client";
-import React, { useState, useRef } from "react";
+import "./style/ProjectSection.scss";
+
+import { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import dataProjects from "@/data/dataProjects";
+import data from "../../../public/data.json";
 import ProjectModal from "./ModalProject";
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
-  const [isOpen, setIsOpen] = useState(null);
+  const [isOpen, setIsOpen] = useState<Project | null>(null);
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
+  const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
 
-  const filteredProjects = dataProjects.filter((project) =>
+  const filteredProjects = data.projects.filter((project: Project) =>
     project.tag.includes(tag)
   );
 
@@ -28,12 +30,10 @@ const ProjectsSection = () => {
 
   return (
     <>
-      <div className="mx-6 lg:mx-24">
-        <h2 className="text-center text-4xl font-bold text-white">
-          Mes Projets
-        </h2>
+      <div className="projects-container">
+        <h2>Mes Projets</h2>
 
-        <div className="text-white flex flex-row justify-center items-center gap-2 pt-12 pb-8">
+        <div className="filterbar">
           <ProjectTag
             onClick={handleTagChange}
             name="All"
@@ -52,11 +52,8 @@ const ProjectsSection = () => {
         </div>
 
         <div>
-          <ul
-            ref={ref}
-            className="grid md:grid-cols-2 gap-8 md:gap-12 lg:grid-cols-3"
-          >
-            {filteredProjects.map((project, index) => (
+          <ul ref={ref} className="projects">
+            {filteredProjects.map((project: Project, index: number) => (
               <motion.li
                 key={index}
                 variants={cardVariants}
@@ -67,7 +64,6 @@ const ProjectsSection = () => {
                 <ProjectCard
                   key={project.id}
                   title={project.title}
-                  description={project.description}
                   imgUrl={project.image}
                   onClick={() => {
                     setIsOpen(project);
@@ -77,6 +73,7 @@ const ProjectsSection = () => {
             ))}
           </ul>
         </div>
+
         {isOpen && (
           <ProjectModal
             onClose={() => {
@@ -91,3 +88,17 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+  banner: string;
+  client: string;
+  presentation: string;
+  objectif: string;
+  technologies: string[];
+  tag: string[];
+  gitUrl: string;
+  previewUrl: string;
+}

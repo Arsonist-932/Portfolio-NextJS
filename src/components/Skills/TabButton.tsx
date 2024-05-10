@@ -6,7 +6,7 @@ const variants = {
   active: { width: "calc(100% - 0.75rem)" },
 };
 
-const TabButton = ({ active, selectTab, children }) => {
+const TabButton = ({ active, selectTab, children }: TabButtonProps) => {
   const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
 
   return (
@@ -17,10 +17,16 @@ const TabButton = ({ active, selectTab, children }) => {
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-primary-500 mt-1 mr-3"
+        className="h-1 bg-[#f97316] mt-1 mr-3"
       ></motion.div>
     </button>
   );
 };
 
 export default TabButton;
+
+interface TabButtonProps {
+  active: boolean;
+  selectTab: () => void;
+  children: string;
+}

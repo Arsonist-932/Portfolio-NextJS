@@ -1,0 +1,110 @@
+/* Modal Project */
+.modal-project {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .content {
+    background-image: url(../../../../public/images/bg-hero.webp);
+    position: relative;
+    max-width: 700px;
+    min-width: 300px;
+    height: 600px;
+
+    padding: 3rem 2rem 2rem 2rem;
+    margin: 0 1.5rem;
+    border-radius: 1rem;
+    overflow-y: auto;
+
+    @media screen and (min-width: 768px) {
+      height: auto;
+    }
+
+    button {
+      position: absolute;
+      color: #ef4444;
+      top: 0.5rem;
+      right: 0.5rem;
+      height: 1.5rem;
+
+      &:hover {
+        color: #b91c1c;
+      }
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 1rem 0;
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 800;
+        line-height: 1.75rem;
+        font-size: 1.25rem;
+        background-clip: text;
+        background-image: linear-gradient(to left bottom, #fb923c, #dc2626);
+        color: transparent;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        padding: 0 0.75rem;
+        line-height: 1.75rem;
+        font-size: 1.125rem;
+      }
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+
+      p {
+        padding: 0.5rem 0.75rem;
+        border-width: 1px;
+        border-color: #b91c1c;
+        border-radius: 0.25rem;
+        color: #ea580c;
+        cursor: default;
+        font-size: 0.9rem;
+      }
+    }
+
+    .links-container {
+      display: flex;
+      justify-content: end;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      a {
+        display: block;
+        padding: 0.5rem 1.25rem;
+        border-width: 1px;
+        border-color: #f97316;
+        border-radius: 0.75rem;
+        background-color: #000000;
+
+        color: #dc2626;
+
+        &:hover {
+          color: #f87171;
+          border-color: #1e293b;
+        }
+      }
+    }
+  }
+}
