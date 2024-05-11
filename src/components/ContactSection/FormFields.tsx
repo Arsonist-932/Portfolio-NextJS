@@ -21,6 +21,7 @@ const FormFields = ({
             placeholder={placeholder}
             autoComplete="off"
             className=" placeholder-[#9CA2A9] text-gray-100"
+            required
           />
         </label>
       </div>

@@ -90,6 +90,7 @@ const Form = () => {
               placeholder="Votre message..."
               value={formData.message}
               onChange={handleChange}
+              required
             />
           </div>
 
