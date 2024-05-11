@@ -26,14 +26,15 @@ form {
 
   button {
     padding: 0.625rem 1.25rem;
-    background-color: #f97316;
+    background-color: #ea580c;
     font-weight: 500;
     border-radius: 0.5rem;
     width: 100%;
     margin-top: 2.5rem;
+    color: #18191e;
 
     &:hover {
-      background-color: #ea580c;
+      background-color: #f97316;
     }
   }
 }

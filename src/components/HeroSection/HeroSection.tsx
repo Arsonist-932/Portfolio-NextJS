@@ -39,11 +39,14 @@ const HeroSection = () => {
           </div>
 
           <div className="social">
-            <IconSocials width={45} height={45} />
+            <ul>
+              <IconSocials width={45} height={45} />
+            </ul>
           </div>
 
           <div className="button-container">
             <Link href="/#about">
+              <span className="sr-only">Lien vers la section A Propos</span>
               <FaChevronDown size={30} />
             </Link>
           </div>
